@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+.page-header {
+    padding-bottom: 150px;
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 45px;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        justify-content: space-between;
+    }
+    background: #000;
+}
+.header-logo {
+    display: flex;
+    align-items: center;
+    &__img {
+        padding-right: 25px;
+    }
+}
+.header-list {
+    display: flex;
+    &__link {
+        color: #fff;
+        padding: 0 25px;
+        &:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+.first-screen {
+    background: #000;
+    padding-bottom: 150px;
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    &__block {
+        max-width: 500px;
+        color: #fff;
+    }
+}
+.free-consultation {
+    border-radius: 2px;
+    background-color: #fe533d;
+    border: none;
+    padding: 20px 40px;
+    color: #fff;
+    font-size: 18px; 
+}
+.competion {
+    display: flex;
+}
+.competion-about {
+    display: flex;
+    box-shadow: 0 0 39px 1px rgba(0, 0, 0, 0.1);
+    &__icon {
+        width: 150px;
+        background: #151c32 url(img/icon_2.png) no-repeat;
+        background-position: center;
+    }
+    &__text1 {
+        color: #444444;
+        font-size: 15px;
+    }
+    &__text2 {
+        color: #151c32;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px;
+    }
+}
+.competion-exp {
+    box-shadow: 0 0 39px 1px rgba(0, 0, 0, 0.2);
+    background-color: #fe533d;
+    padding: 54px 100px;
+    color: #fff;
+    width: 34%;
+    &__desc {
+    }
+    &__text {
+        font-size: 20px;
+    }
+    &__numb {
+        font-size: 30px;
+    }
+}
+.about {
+    padding: 150px;
+    &__container {
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+    }
+}
+.uslugi {
+    background-color: #cea05f;
+    padding: 100px;
+    color: #fff;
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 5px;
+    }
+    &__h2 {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+}
+.usluga {
+    padding: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    transition: all 0.2s;
+    &:hover {
+        background-color: #151c32;
+        cursor: pointer;
+    }
+    p {
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+.price {
+    padding: 100px;
+    &__container {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    &__h2 {
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    &__line {
+        width: 60px;
+        height: 2px;
+        background-color: #fe533d;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}
+.price-blocks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+.price-item {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    transition: all 0.2s;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    &:nth-of-type(3n+2) {
+        border-right: 1px solid #eee;
+        border-left: 1px solid #eee;
+    }
+    &__price {
+        margin-bottom: 25px;
+        color: #151c32;
+        font-size: 18px;
+        font-weight: bold;
+        &:hover {
+            color: #fe533d;
+        }
+    }
+    &__description {
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+.call {
+    padding: 20px;
+    &__container {
+        background-color: #cea05f;
+        padding: 100px;
+        text-align: center;
+        font-size: 35px;
+        color: #fff;
+    }
+    &__phone {
+        font-weight: bold;
+    }
+}
+.about-us {
+    background-color: #151c32;
+    padding: 100px;
+    color: #fff;
+    &__h2 {
+        color: #cea05f;
+    }
+}
