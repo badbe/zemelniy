@@ -4,12 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Заголовок</title>
-    <meta name="description" content="Описание"/>
+    <title>Земельный юрист. Консультация юриста по земельным вопросам в Москве</title>
+    <meta name="description" content="Предлагаем помощь земельного юриста. Бесплатная консультация. Юридические услуги по Москве и области. Работаем с ЗК РФ."/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js" charset="UTF-8"></script><script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(49834729, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        trackHash:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/49834729" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 </head>
 <body>
     <section class="first-block">
@@ -217,14 +233,14 @@
         </div>
     </section>
     <section class="contact-form">
-        <form action="" class="svyaz">
+        <form action="form.php" class="svyaz" method="POST">
             <h2 class="svyaz__h2">Обратная связь</h2>
             <p class="svyaz__text">Заполните форму обратной связи и мы вам ответим в течении часа! Разбираемся во всех нюансах земельных споров!</p>
             <div class="svyaz__inputs">
-                    <input type="text" name="name" id="" class="svyaz__nane" placeholder="Имя">
-                    <input type="text" name="phone" id="" class="svyaz__phone" placeholder="Телефон">
+                    <input type="text" name="name" id="name1" class="svyaz__nane" placeholder="Имя">
+                    <input type="text" name="phone" id="phone2" class="svyaz__phone" placeholder="Телефон">
             </div>
-            <textarea name="" id="" cols="30" rows="10" class="svyaz__textarea" placeholder="Введите сообщение"></textarea>
+            <textarea name="text" id="text1" cols="30" rows="10" class="svyaz__textarea" placeholder="Введите сообщение"></textarea>
             <button type="submit">Отправить сообщение</button>
         </form>
     </section>
@@ -236,7 +252,7 @@
             <div class="block-adres">
                 <p><b>Телефон:</b> +7-499-348-84-43</p>
                 <p><b>Почта:</b> info@zemelniy-urist.pro</p>
-                <p><b>Адрес:</b> ​Таганская площадь, 12/4с5</p>
+                <p><b>Адрес:</b> Таганская площадь, 12/4с5</p>
                 <p><b>Время работы:</b> 9:00-20:00 пн-пт., суб. и вскр. выходной.</p>
             </div>
             <div class="block-map">
@@ -251,7 +267,7 @@
             <div class="call-now__text">
                 Получите бесплатную консультацию прямо сейчас!
             </div>
-            <form action="" class="call-now__form">
+            <form action="form.php" class="call-now__form" method="POST">
                 <input type="text" name="phone" id="phone-input" placeholder="Ваш телефон...">
                 <button type="submit">Отправить</button>
             </form>
@@ -267,6 +283,16 @@
             </div>
         </div>
     </footer>
+    <div class="popup-container">
+        <div class="popup">
+            <form action="form.php" class="popup__form" method="POST">
+                <input type="text" name="name" id="name2" class="popup__name" placeholder="Имя">
+                <input type="text" name="phone" id="phone3" class="popup__phone" placeholder="Телефон">
+                <button type="submit" class="popup__button">Отправить</button>
+            </form>
+            <div class="popup__close"></div>
+        </div>
+    </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
